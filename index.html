@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Cespie The Robo Puppy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+ 
+<body>
+  <h2> Cespie The Robo Puppy!</h2>
+  <h2>Click Me</h2>
+    <div onclick="iy()">
+  <div class="dog">
+    <div class="head">
+      <div class="ear ear-left"></div>
+      <div class="ear ear-right"></div>
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="nose"></div>
+      <div class="tongue"></div>
+      <div class="patch"></div>
+    </div>
+    <div class="body">
+      <div class="leg leg-left"></div>
+      <div class="leg leg-right"></div>
+    </div>
+    <div class="tail"></div>
+  </div>
+</div>
+<br><br>
+<div class="apps_corner">
+<h2>Apps Corner</h2>
+
+
+
+<div class="frame">
+<button type="button" id="Open YouTube" class="custom-btn btn-1" onclick="navigate_youtube()"> YouTube</button>
+<br><br>
+<button type="button" id="Take a selfie" class="custom-btn btn-2" onclick="cam()"><span>Click!</span><span>Take a selfie</span></button>
+<br><br>
+<button type="button" id="Do Calculations" class="custom-btn btn-3" onclick="calculator()"> Calculations</button>
+<br><br>
+<button type="button" id="Google Search"  class="custom-btn btn-4" onclick="google()">Google Search</button>
+<br><br>
+<button type="button" id="Open WhatsUp"  class="custom-btn btn-5" onclick="whatsup()">WhatsUp</button>
+<br><br>
+<button type="button" id="Intro"  class="custom-btn btn-6" onclick="intro()">Intro</button>
+<br><br>
+<button type="button" id="game" class="custom-btn btn-8" onclick="play_game()">Game</button>
+<br><br>
+<button type="button" id="Play Animations" class="custom-btn btn-7" onclick="animations()"> Play Animations</button>
+<br><br>
+<button type="button" id="Play Songs" class="custom-btn btn-9" onclick="play_songs()">Play Songs</button>
+<br><br>
+  <button type="button" id="break_time" class="custom-btn btn-10" onclick="break_time()">Break Time</button>
+<br><br>
+<button type="button" id="S vs D" class="custom-btn btn-12" onclick="S_vs_D()">SD game</button>
+<br><br>
+</div>
+
+
+<div class="apps_corner">
+  <h2>Creativity</h2>
+<button type="button" id="Robotic Cat" class="custom-btn btn-11" onclick="Robotic_Cat()">Robotic Cat</button>
+<br><br>
+<button type="button" id="Universe" class="custom-btn btn-13" onclick="Universe()">Universe</button>
+<br><br>
+<button type="button" id="twit twit bird" class="custom-btn btn-14" onclick="twit_twit_bird()">twit twit bird</button>
+<br><br>
+<button type="button" id="letters shivering dance" class="custom-btn btn-15" onclick="letters_shivering_dance()">letters shivering dance</button>
+<br><br>
+<button type="button" id="alien's UFO" class="custom-btn btn-16" onclick="aliens_UFO()">alien's UFO</button>
+<br><br>
+<button type="button" id="firework" class="custom-btn btn-17" onclick="firework()">Fliter Sparks</button>
+<br><br>
+</div>
+<script src="main_screen.js"></script>
+</body>
+</html>
