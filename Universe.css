@@ -1,0 +1,287 @@
+.box{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle,#001f54,12%,#001f54,45%,black);
+  }
+  
+  .planet{
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border-radius: 50%;
+    margin-top: 170px;
+    box-shadow: inset 2px 1px 4px #5a189a,
+      inset -7px -5px 2px #000,
+      inset 5px 6px 4px #240046,
+      inset 4px -6px 4px #240046,
+      inset -50px -1px rgba(199,125,255,0.15),
+      inset 15px 10px 30px #5a189a,
+      inset -10px -20px 8px rgba(22,138,173,0.3),
+      inset -10px -30px 8px rgba(26,117,159,0.3),
+      inset -10px -50px 8px rgba(52,160,164,0.3),
+      inset -10px -40px 8px rgba(170,204,0,0.3),
+      inset -10px -60px 2px rgba(128,237,153,0.3);
+  }
+  .planet::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: 30%;
+    left: 12%;
+    background: white;
+    border-radius: 50%/25%;
+    transform: rotate(30deg);
+  }
+  
+  .planet::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 87px;
+    top: 11.7%;
+    left: 20%;
+    border: 12px solid;
+    border-color: #fff transparent transparent transparent;
+    border-radius: 60%/20%;
+    transform: rotate(-40deg)
+  }
+  
+  .curves{
+    position: absolute;
+    height: 15px;
+    width: 9px;
+    background: white;
+    top: 22.4%;
+    left: 17.5%;
+    border-radius: 50%;
+    transform: rotate(46deg);
+  }
+  
+  .curves::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 10px;
+    background: white;
+    top: -580%;
+    left: 60.1%;
+    border-radius: 60%;
+    transform: rotate(23deg);
+  }
+  
+  .ring{
+    position: absolute;
+    width: 100px;
+    height: 730px;
+    top: -40%;
+    left: 35%;
+    background: transparent;
+    box-shadow: inset 6px 15px 2px #80ed99,
+      inset 6px -15px 2px #80ed99;
+    border-radius: 50%/50%;
+    transform: rotate(-65deg);
+    z-index: 2;
+  }
+  
+  .ring::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 730px;
+    background: transparent;
+    border-radius: 50%/50%;
+    transform: rotate(0deg);
+    box-shadow: inset -1px 5px 2px #80ed99;
+    z-index: -1;
+  }
+  
+  .dec-1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5%;
+    right: 25%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset -8px 1px 3px black,
+      inset 1px -1px 3px #ff477e,
+      inset -2px 6px 3px #a01a58,
+      inset -2px -6px 3px #a01a58,
+      inset 7px -1px 3px #ef233c;
+  }
+  
+  .dec-2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10%;
+    left: 10%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset -8px 1px 3px black,
+      inset 1px -1px 3px #9d4edd,
+      inset -2px 6px 3px #5a189a,
+      inset -2px -6px 3px #5a189a,
+      inset 7px -1px 3px #7b2cbf;
+  }
+  
+  .dec-3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    left: 35%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset -8px 1px 3px black,
+      inset 1px -1px 3px #80b918,
+      inset -2px 6px 3px #2b9348,
+      inset -2px -6px 3px #2b9348,
+      inset 7px -1px 3px #55a630;
+  }
+  
+  .dec-4{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    right: 25%;
+    background: linear-gradient(45deg,#d00000,10%,#6a040f,70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-4::before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: -60%;
+    right: -60%;
+    background: linear-gradient(45deg,rgba(208,0,0,0.2),10%,rgba(106,4,15,0.2),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-4::after{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35%;
+    right: -35%;
+    background: linear-gradient(45deg,rgba(208,0,0,0.4),10%,rgba(106,4,15,0.4),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-5{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15%;
+    left: 25%;
+    background: linear-gradient(45deg,#168aad,10%,#1a759f,65%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-5::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50%;
+    right: -50%;
+    background: linear-gradient(45deg,rgba(22, 138, 173,0.2),10%,rgba(26,117,159,0.2),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-5::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -30%;
+    right: -30%;
+    background: linear-gradient(45deg,rgba(208,0,0,0.4),10%,rgba(22, 138, 173,0.2),10%,rgba(26,117,159,0.2),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-6{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 45%;
+    right: 13%;
+    background: linear-gradient(45deg,#ff9100,10%,#ff7900,75%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-6::before{
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -65%;
+    right: -65%;
+    background: linear-gradient(45deg,rgba(255,145,0,0.2),20%,rgba(255,121,0,0.2),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-6::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -35%;
+    right: -35%;
+    background: linear-gradient(45deg,rgba(255,145,0,0.2),20%,rgba(255,121,0,0.2),70%,black);
+    border-radius: 50%;
+  }
+  
+  .dec-7{
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    top: 70%;
+    left: 15%;
+    background-image: linear-gradient(to bottom, #3acfd5,#3a4ed5);
+    border-radius: 60%/60%;
+    box-shadow: 0px 0px 5px #3acfd5;
+  }
+  
+  .dec-7::after{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    border-radius: 60%/60%;
+    transform: rotate(90deg);
+    box-shadow: 0px 0px 5px #3acfd5;
+  }
+  
+  .dec-8{
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    bottom: 70%;
+    right: 25%;
+    background-image: linear-gradient(to bottom, #3acfd5,#3a4ed5);
+    border-radius: 60%/60%;
+    box-shadow: 0px 0px 5px #3acfd5;
+  }
+  
+  .dec-8::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    border-radius: 60%/60%;
+    transform: rotate(90deg);
+    box-shadow: 0px 0px 5px #3acfd5;
+  }

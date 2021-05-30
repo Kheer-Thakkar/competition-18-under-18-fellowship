@@ -1,0 +1,53 @@
+Like it if you like it Thank you
+ Best viewed in fullscreen
+ https://codepen.ionocni_sovacfulldf9eb365f41a65b6cf29ce0c1d39b45c/
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap");
+
+body {
+	background: #111111;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	cursor: pointer;
+	font-family: "Crafty Girls", cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p,body{
+    background-color: black;
+	color: yellow;
+	font-size: 32px;
+	text-shadow: 2px 2px 4px rgba(154, 150, 150, 1);
+	user-select: none;
+}
+
+@keyframes ringRotate {
+	0% {
+        background-color: black;
+		transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg);
+	}
+
+	100% {
+        background-color: black;
+		transform: rotateZ(-360deg) rotateY(-360deg) rotateX(-360deg);
+	}
+}
+
+firefly {
+    background-color: black;
+	position: absolute;
+	background: yellow;
+	left: 0;
+	border-radius: 100%;
+	pointer-events: none;
+	top: 0;
+	transform-style: preserve-3d;
+	opacity: 0;
+	box-shadow: 5px 5px 44px rgba(100, 155, 200, 1);
+}

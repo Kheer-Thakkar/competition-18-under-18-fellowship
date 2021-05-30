@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+h1 span:nth-child(2){ animation-delay:.10s; }
+h1 span:nth-child(3){ animation-delay:.20s; }
+h1 span:nth-child(4){ animation-delay:.30s; }
+h1 span:nth-child(5){ animation-delay:.40s; }
+h1 span:nth-child(6){ animation-delay:.50s; }
+h1 span:nth-child(7){ animation-delay:.60s; }
+h1 span:nth-child(8){ animation-delay:.70s; }
+h1 span:nth-child(9){ animation-delay:.80s; }
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  background: mix(#fff, lightcoral, 50%); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  overflow:hidden; 
+}
+
+h1 {
+  font-size:4.5em;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+h1 span { 
+  display:inline-block; 
+  animation: shake .2s ease-in-out infinite; 
+}
+
+body:hover span { 
+  animation: bounce 3s;
+}
+
+@keyframes shake {
+  0% { 
+    transform: none; 
+  }
+  50%{ 
+    transform:translateY(-2px); 
+  }
+  100%{ 
+    transform:translateY(2px); 
+  }
+}
+
+@keyframes bounce {
+  0% { 
+    transform:translate(0); 
+  }
+  25%{ 
+    transform:rotateX(40deg) translateY(4px); 
+  }
+  50%{ 
+    transform:translateY(-20px) scale(1.5);  
+  }
+}
+
+span:nth-child(1) { color: #FFFD82; text-shadow:1px 1px grey, 3px 3px yellow, 4px 4px grey;}
+span:nth-child(2) { color:#00C2D1; text-shadow:1px 1px grey, 3px 3px blue, 4px 4px grey;}
+span:nth-child(3) { color:#F6AF65; text-shadow:1px 1px grey, 3px 3px darkorange, 4px 4px grey;}
+span:nth-child(4) { color:#ED33B9; text-shadow:1px 1px grey, 3px 3px deeppink, 4px 4px grey;}
+span:nth-child(5) { color:#2CA58D; text-shadow:1px 1px grey, 3px 3px green, 4px 4px grey;}
